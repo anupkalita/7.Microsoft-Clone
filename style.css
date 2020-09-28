@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000; 
+    line-height: 1.5;
+}
+
+
+/* Utility */
+.container{
+    max-width: 1150px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color: #000;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+}
+
+.box h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 2rem
+}
+
+.box a{
+    color: #0067B8;
+    font-weight: 500;
+}
+
+.box a:hover{
+    text-decoration: underline;
+}
+
+.box i{
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+
+
+/* Navbar Section */
+.nav-bar{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar img{
+    width: 7rem;
+}
+
+.nav-bar ul a{
+    color: #000;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
+}
+
+.nav-bar ul a:hover{
+    border-bottom: 2px solid #000;
+}
+
+.nav-bar div{
+    justify-self: end;
+    color: #616161;
+}
+
+.nav-bar div i{
+    padding-left: 0.7rem;
+}
+
+
+
+/* Showcase Section */
+.showcase .covid{
+    background-color: #0067B8;
+    text-align: center;
+    padding: 0.6rem;
+}
+
+.showcase .covid a{
+    color: #fff;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.showcase .covid i{
+    color: #fff;
+    font-size: 0.5rem; 
+}
+
+.showcase .covid a:hover{
+    text-decoration: underline;
+    margin-right: 0.5rem;
+}
+
+
+
+.showcase-content{
+    background: url(./img/main.jpeg) no-repeat center center/cover;
+    height: 27rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.showcase-content .showcase-text{
+    padding: 3rem;
+    align-self: center;
+}
+
+.showcase-content .showcase-text h1{
+    font-weight: 500;
+}
+
+.showcase-content .showcase-text p{
+    margin: 1rem 0;
+}
+
+.showcase-content .showcase-text .first{
+    background-color: #000;
+    color: #fff;
+}
+
+.showcase-content .showcase-text i{
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+    transition: 0.3s;
+}
+
+.showcase-content .showcase-text a:hover{
+    text-decoration:underline;
+}
+
+
+
+/* Product Section */
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.product div{
+    width: 160px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product div img{
+    width: 2.5rem;
+}
+
+.product div a{
+    color: #000;
+    font-weight: 500;
+}
+
+.product div a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*Product Boxes Section */
+.boxes{
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+}
+
+
+
+/* Second Showcase */
+.second-showcase{
+    background: url(./img/pic1.jpg) no-repeat center center/cover;
+    height: 27rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2.5rem;
+}
+
+.second-showcase-text{
+    padding: 4rem;
+    align-self: center;
+}
+
+.second-showcase-text h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.second-showcase-text p{
+    margin: 1rem 0;
+}
+
+.second-showcase-text a{
+    background-color: #000;
+    color: #fff;
+    /* transition: 0.3s; */
+}
+
+.second-showcase-text a:hover{
+    text-decoration: underline;
+}
+
+.second-showcase-text i{
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+}
+
+
+
+
+/* For Work Section */
+.for-work-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.for-work > h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+
+/* Social Media Section */
+.social-media{
+    display: flex;
+    justify-content: flex-start;
+    color: #616161;
+    padding: 2rem 0;
+}
+
+.social-media img{
+    width: 3rem;
+    padding-left: 1rem;
+}
+
+
+
+/* Footer Section */
+.footer-section{
+    background-color: #F2F2F2;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 2rem 0;
+}
+
+footer h1{
+    color: #616161;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+}
+
+footer ul a{
+    font-size: 0.8rem;
+    color: #616161;
+}
+
+footer ul a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* Copyright Section */
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.copyright ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright a{
+    font-size: 0.8rem;
+    color: #616161;
+    padding-left: 1rem;
+}
+
+.copyright a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* ---------------------------------------------------Media Queries------------------------------------  */
+
+@media(max-width:768px){
+
+    /* Navbar Section */
+    .nav-bar{
+        grid-template-columns: 3fr 2fr;
+    }
+    
+
+    .nav-bar ul{
+        display: none;
+    }
+
+    /* Showcase Section */
+    .showcase-content{
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    /*Product Boxes Section */
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 0 1rem;
+    }
+
+
+    /* For Work Section */
+    .for-work-content{
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        padding: 0 1rem;
+    }
+
+
+    /* Footer Section */
+    footer{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 2rem;
+        justify-items: center;
+        padding: 2rem 0;
+    }
+
+    .copyright{
+        padding: 2rem 1rem;
+    }
+}
+
+
+
+/* -----------------------------------------------540px--------------------------------------------- */
+@media(max-width:540px){
+
+     /*Product Boxes Section */
+     .boxes{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+
+    /* Second Showcase Section */
+    .second-showcase{
+        background: url(./img/pic1.jpg) no-repeat -550px;
+        grid-template-columns: 1fr;
+    }
+
+    .second-showcase-text{
+        padding: 2rem;
+    }
+
+
+    /* For Work Section */
+    .for-work-content{
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    }
+
+
+    /* Copyright Section */
+    .copyright{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright a{
+        font-size: 0.7rem;
+        padding-left: 0.5rem;
+    }
+}
+
+
+/* ------------------------------------------------414px--------------------------------------------- */
+@media(max-width:414px){
+    
+    /* Showcase Section */
+    .showcase-content{
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .showcase-content .showcase-text{
+        padding: 1rem;
+    }
+
+
+    /* Second Showcase */
+    .second-showcase-text{
+        padding: 1rem;
+    }
+
+
+    /* Footer Section */
+    footer{
+        grid-template-columns: 1fr;
+        justify-items: start;
+        padding: 2rem 2rem;
+    }
+
+}
+
+
+/* -------------------------------------------320px---------------------------------------------------- */
+@media(max-width:320px){
+
+    /* Showcase Section */
+    .showcase-content{
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-content .showcase-text{
+        align-self: start;
+    }
+
+
+    /* Second Showcase
+    .second-showcase{
+        grid-template-columns: 1fr;
+    } */
+}

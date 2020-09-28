@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Hamburger Menu Button -->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
     <!-- Navbar Section -->
     <div class="container">
         <nav class="nav-bar">
@@ -281,5 +286,10 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('ul').classList.toggle('show'));
+    </script>
 </body>
 </html>

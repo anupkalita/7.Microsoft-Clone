@@ -62,7 +62,16 @@ img{
     margin: 1rem 0;
 }
 
-
+/* Menu Button */
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 130px;
+    z-index: 2;
+    color: #616161;
+    display: none;
+}
 
 /* Navbar Section */
 .nav-bar{
@@ -349,6 +358,15 @@ footer ul a:hover{
 /* --------------------------------------------------768px----------------------------------------------- */
 @media(max-width:768px){
 
+    /*Hamburger Menu Button */
+    .menu-btn{
+        display: block;
+    }
+
+    .menu-btn:hover{
+        opacity: 0.7;
+    }
+
     /* Navbar Section */
     .nav-bar{
         grid-template-columns: 3fr 2fr;
@@ -356,7 +374,35 @@ footer ul a:hover{
     
 
     .nav-bar ul{
-        display: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #F2F2F2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 1rem;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-bar ul.show{
+        transform: translateX(0px);
+    }   
+
+    .nav-bar ul li{
+        padding: 1rem;
+        border-bottom: #ccc 1px solid;
+    }
+
+    .nav-bar ul li a{
+        font-size: 1rem;
+    }
+
+    .nav-bar ul li:last-child{
+        border: none
     }
 
     /* Showcase Section */
@@ -431,6 +477,11 @@ footer ul a:hover{
 
 /* ------------------------------------------------426px--------------------------------------------- */
 @media(max-width:426px){
+
+    /* Navbar Section */
+    .nav-bar ul li a{
+        font-size: 0.8rem;
+    }
     
     /* Showcase Section */
     .showcase-content{

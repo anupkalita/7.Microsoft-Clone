@@ -331,7 +331,22 @@ footer ul a:hover{
 
 
 /* ---------------------------------------------------Media Queries------------------------------------  */
+/* ---------------------------------------------------1024px------------------------------------------- */
+@media(max-width:1024px){
 
+     /*Product Boxes Section */
+    .boxes{
+        padding: 0 1rem;
+    }
+
+    /* For Work Section */
+    .for-work-content{
+        padding: 0 1rem;
+    }
+}
+
+
+/* --------------------------------------------------768px----------------------------------------------- */
 @media(max-width:768px){
 
     /* Navbar Section */
@@ -351,16 +366,13 @@ footer ul a:hover{
 
     /*Product Boxes Section */
     .boxes{
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        padding: 0 1rem;
     }
 
 
     /* For Work Section */
     .for-work-content{
         grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-        padding: 0 1rem;
     }
 
 
@@ -407,7 +419,6 @@ footer ul a:hover{
 
     /* Copyright Section */
     .copyright{
-        display: flex;
         flex-direction: column;
     }
 
@@ -418,16 +429,17 @@ footer ul a:hover{
 }
 
 
-/* ------------------------------------------------414px--------------------------------------------- */
-@media(max-width:414px){
+/* ------------------------------------------------426px--------------------------------------------- */
+@media(max-width:426px){
     
     /* Showcase Section */
     .showcase-content{
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1fr 0.3fr;
     }
 
     .showcase-content .showcase-text{
         padding: 1rem;
+        align-self: start;
     }
 
 
@@ -444,24 +456,4 @@ footer ul a:hover{
         padding: 2rem 2rem;
     }
 
-}
-
-
-/* -------------------------------------------320px---------------------------------------------------- */
-@media(max-width:320px){
-
-    /* Showcase Section */
-    .showcase-content{
-        grid-template-columns: 1fr;
-    }
-
-    .showcase-content .showcase-text{
-        align-self: start;
-    }
-
-
-    /* Second Showcase
-    .second-showcase{
-        grid-template-columns: 1fr;
-    } */
 }
